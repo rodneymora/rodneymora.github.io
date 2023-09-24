@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rodney Mora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/5.0.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Rodney E. Mora Escalante</td>
+                <td id="navigation">
+                    <a href="#resea">research</a>
+                    <a href="#proj">projects</a>
+                    <a href="#gal">gallery</a>
+                    <a href="#bio">about</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1 style="font-size: 55px;">Welcome!</h1>
+                <h1 style="font-size: 55px;"><span style="color:#D90429">PURA VIDA</span></h1>
+                <h1 style="font-size: 50px;">I am <span style="color:#023E8A">Rodney Eduardo</span></h1>
+                <h1 style="font-size: 40px;">And I am <span style="color:#023E8A">Meteorologist & Physical Oceanographer</span></h1>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://github.com/rodneymora"><i class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="http://www.miocimar.ucr.ac.cr.com"><i class="fas fa-globe"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://x.com/rodney_eme"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante"><i class="fa-brands fa-researchgate"></i>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    
+    <div id="resea">
+        <h1>Research</h1>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura1.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">Waves Data in Costa Rica: Validating the WAVERYS Reanalysis using Waves Data</a></div>
+        </div>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura2.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">La respuesta de modelos espectrales de olas en condiciones de huracanes intensos en el golfo de México</a></div>
+        </div>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura3.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">Desviaciones entre predicciones y mediciones de las mareas en Costa Rica, América Central</a></div>
+        </div>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura5.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">Simulación de oleaje en los alrededores de la Isla del Coco, Costa Rica</a></div>
+        </div>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura4.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">Distribución de temperatura y salinidad en campañas oceanográficas recientes en el Pacífico Tropical Oriental de Costa Rica</a></div>
+        </div>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura6.jpg)">
+            <div><a target="_blank" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante" onclick="stopPropagation(event)" style="color:white">Simulación de las condiciones oceanográficas de los huracanes que han pasado más cerca de Costa Rica</a></div>
+        </div>
+
+        <h1>Thesis</h1>
+
+        <div class="onClickTextOverImage" style="background-image:url(images/Figura7.jpg)">
+            <div><a target="_blank" href="https://biblioteca.cicese.mx/catalogo/tesis/ficha.php?id=24051" onclick="stopPropagation(event)" style="color:white">A numerical study of the wave field structure on hurricane conditions</a></div>
+        </div>
+        
+    </div>
+
+    <div id="proj">
+        <h1>Projects</h1>
+        <!--
+        <div class="onClickTextOverImage" style="background-image:url(images/general_pictures/pipeline.jpg)">
+            <div><a target="_blank" href="https://medium.com/@patthie/set-up-an-r-project-with-me-including-pipeline-package-management-and-version-control-e03dfde79941" onclick="stopPropagation(event)" style="color:white">Set up an R-project with me — including pipeline, package management, and version control</a></div>
+        </div>
+        -->
+    </div>
+
+    <!--
+    This section below were added to show photos
+    -->
+    <div id="gal">
+        <h1>Gallery</h1>
+        <h2>Quepos, Puntarenas, Costa Rica (march 5, 2020)</h2>
+
+        <!-- See https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javascript/
+            -->
+        <div class="gallery">
+        
+        <img src="images/QUEP/DJI_0013.JPG"alt="Image 1" class="gallery-img" onclick="showImage(src)">
+        <img src="images/QUEP/DJI_0021.JPG"alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="images/QUEP/DJI_0025.JPG"alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src="images/QUEP/DJI_0034.JPG"alt="Image 4" class="gallery-img" onclick="showImage(src)">
+        <img src="images/QUEP/DJI_0036.JPG"alt="Image 5" class="gallery-img" onclick="showImage(src)">
+
+        </div>
+
+        <!-- Inser video
+        See https://www.geeksforgeeks.org/how-to-insert-video-in-web-page-and-play-it-using-html/
+         -->
+        <h4>UCR buoy deployment</h4>
+        <video width="500px" height="320px" controls="controls">
+        <source src="videos/DJI_0035.mp4" type="video/mp4" />
+       </video>
+
+        <h2>Puntarenas, Costa Rica (november 25, 2019)</h2>
+
+        <div class="gallery">
+
+        <img src="images/PUNT/DJI_0544.JPG"alt="Image 1" class="gallery-img" onclick="showImage(src)">
+        <img src="images/PUNT/DJI_0565.JPG"alt="Image 2" class="gallery-img" onclick="showImage(src)">
+        <img src="images/PUNT/DJI_0566.JPG"alt="Image 3" class="gallery-img" onclick="showImage(src)">
+        <img src="images/PUNT/DJI_0571.JPG"alt="Image 4" class="gallery-img" onclick="showImage(src)">
+        <img src="images/PUNT/DJI_0584.JPG"alt="Image 5" class="gallery-img" onclick="showImage(src)">
+
+        </div>
+
+        <!-- Inser video -->
+        <h4>Sea surface taken from a Drone [horizontal view]</h4>
+        <video width="500px" height="320px" controls="controls">
+        <source src="videos/DJI_0577.mp4" type="video/mp4" />
+       </video>
+
+        <h2>Jaco Beach, Puntarenas, Costa Rica (july 30, 2018)</h2>
+
+        <div class="gallery">
+
+        <img src="images/JACO/DJI_0116.JPG"alt="Image 6" class="gallery-img" onclick="showImage(src)">
+        <img src="images/JACO/DJI_0123.JPG"alt="Image 7" class="gallery-img" onclick="showImage(src)">
+        <img src="images/JACO/DJI_0137.JPG"alt="Image 8" class="gallery-img" onclick="showImage(src)">
+        <img src="images/JACO/DJI_0141.JPG"alt="Image 9" class="gallery-img" onclick="showImage(src)">
+        <img src="images/JACO/DJI_0142.JPG"alt="Image 10" class="gallery-img" onclick="showImage(src)">
+
+        </div>
+
+        <!-- Inser video -->
+        <h4>Sea surface taken from a Drone [plain view]</h4>
+        <video width="500px" height="320px" controls="controls">
+        <source src="videos/DJI_0102.mp4" type="video/mp4" />
+       </video>
+
+       <h2>Osa Conservation Park, Puntarenas, Costa Rica (december 1, 2018)</h2>
+
+        <div class="gallery">
+
+        <img src="images/OSA/DJI_0263.JPG"alt="Image 11" class="gallery-img" onclick="showImage(src)">
+        <img src="images/OSA/DJI_0264.JPG"alt="Image 12" class="gallery-img" onclick="showImage(src)">
+        <img src="images/OSA/DJI_0265.JPG"alt="Image 13" class="gallery-img" onclick="showImage(src)">
+        <img src="images/OSA/DJI_0266.JPG"alt="Image 14" class="gallery-img" onclick="showImage(src)">
+        <img src="images/OSA/DJI_0267.JPG"alt="Image 15" class="gallery-img" onclick="showImage(src)">
+
+        </div>
+   
+        <!-- Image containter where image will show in big size -->
+        <div class="image-popup-container" id="imagePopup">
+            <span class="close-button" onclick="closeImage()">×</span>
+            <img src="" alt="Popup Image" id="popupImage">
+        </div>
+        <script src="index.js"></script>
+        
+    </div>
+	 <!--       
+	    <div class="intro"> 
+      <h2>Jaco Beach, Puntarenas, Costa Rica (july 30, 2018)</h2> 
+      <p>Select a thumbnail below to view the image</p> 
+	  <div id="image-gallery">
+	    <img id="current-image" src="images/image1.jpg" alt="Image 1">
+		<div id="image-thumbs"></div>
+	</div>
+
+	<div class="intro"> 
+      <h2>Puntarenas, Costa Rica (november 25, 2019)</h2> 
+      <p>Select a thumbnail below to view the image</p> 
+	  <div id="image-gallery">
+	    <img id="current-image" src="images2/image1.jpg" alt="Image 1">
+		<div id="image-thumbs"></div>
+      </div>
+    </div> 
+	<script src="index.js"></script>
+        
+    </div>
+    -->
+    
+    <!--
+    This section above were added to show photos
+    -->
+
+    <div id="bio">
+        <h1>About</h1>
+        <p>
+            I am currently a Physical Oceanographer and Ph.D. candidate in Physical Oceanography at CICESE, Baja California, México. I work at Wave Group as a researcher in the Physical Oceanography Department, focusing on ocean-atmosphere interaction, wind wave dynamics, wave modeling, wave and wind climatology, and extreme events. Also, other exciting topics include tides and tropical ocean dynamics.
+        </p>
+        <p>
+            I love programming in Python, but also use Matlab to tackle data challenges. I use Latex to write my documents. I use bash Linux to automatize and speed up my process. Sometimes, I use Fortran to program specified tasks.
+        </p>
+
+        <h1>Education</h1>
+        <ul class="ul-edu fa-ul">
+        <li>
+        <i class="fa-li fas fa-graduation-cap"></i>
+        <div class=description>
+         <p class=course>MSc in Physical Oceanography, 2015.</p>
+        <p class=institution>The Center for Scientific Research and Higher Education at Ensenada, Baja California, México.</p>
+        </div>
+        </li>
+        <li>
+        <i class="fa-li fas fa-graduation-cap"></i>
+        <div class=description>
+        <p class=course>BSc in Meteorology, 2009.</p>
+        <p class=institution>University of Costa Rica, San Pedro, Costa Rica.</p>
+        </div>
+        </li>
+        </ul>
+        <!--
+        <p>
+            I presented my work at several international conferences. We might have already met.
+        </p>
+        <button type="button" class="collapsible">Conferences I attended</button>
+        <div class="content">
+            <p>Reunión anual de la Unión Geofísica Mexica (RAUGM). November 2022, Puerto Vallarta (México)</p>
+        </div>
+        <p>
+            I also work on expanding my knowledge constantly and pursuing some additional qualifications.
+        </p>
+
+        <button type="button" class="collapsible">Certificates</button>
+        -->
+        <div class="content">  
+            <button type="button" class="collapsible">CROCO couple ocean model course [2021]</button>
+            <!--
+            <div class="content">
+                <div id = "slider">
+                    <div class = "slides">
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h1> Your title </h1>
+                                    <h2> Your description </h2>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="images/google_analytics_I/google_analytics_course_1.png" style="width:15%">
+                            </div>
+                        </div>
+
+                        <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                                <div class="content-txt">
+                                    <h1> Your title </h1>
+                                    <h2> Your description </h2>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <img src="images/google_analytics_I/google_analytics_course_2.png" style="width:15%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            -->
+            <br>
+            <button type="button" class="collapsible">WAVEWATCH Workshop [2013]</button>
+
+        </div>    
+            <!--
+            <div class="content">
+                <div class="slideshow-container">
+
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/google_analytics_I/google_analytics_course_1.png" style="width:60%" class = "center">
+                    <div class="text">Foundations: Data, Data, Everywhere</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/google_analytics_I/google_analytics_course_2.png" style="width:60%" class = "center">
+                    <div class="text">Ask Questions to Make Data-Driven Decisions</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/google_analytics_I/google_analytics_course_3.png" style="width:60%" class = "center">
+                    <div class="text">Prepare Data for Exploration</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/google_analytics_I/google_analytics_course_4.png" style="width:60%" class = "center">
+                    <div class="text">Process Data from Dirty to Clean</div>
+                    </div>
+                
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <br>
+            </div>
+            -->
+            <!--
+            <div class="content">
+                
+                <div class="slideshow-container">
+
+                    
+                    <div class="mySlides fade">
+                    <img src="images/google_it/google_it_automation_course_1.png" style="width:60%" class = "center">
+                    <div class="text">Crash Course on Python</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <img src="images/google_it/google_it_automation_course_3.png" style="width:60%" class = "center">
+                    <div class="text">Introduction to Git and GitHub</div>
+                    </div>
+                
+                    
+                    <a class="prev" onclick="plusSlides(-1)"></a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            -->
+    </div> 
+
+     <div id="contact">
+        <h1>Contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    Rodney E. Mora-Escalante
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; rodney.moraescalante@ucr.ac.cr</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        San José,<br>
+                                        Costa Rica
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://github.com/rodneymora"><i class="fab fa-github"></i></a>
+                                        <a class="social" href="http://www.miocimar.ucr.ac.cr"><i class="fas fa-globe"></i></a>
+                                        <a class="social" href="https://x.com/rodney_eme"><i class="fab fa-twitter"></i></a>
+                                        <a class="social" href="https://www.researchgate.net/profile/Rodney-Mora-Escalante"><i class="fa-brands fa-researchgate"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <!-- Form https://formspree.io/forms/mleypzje/integration-->
+                        <form action="https://formspree.io/f/mleypzje" method="POST">
+                            <input type="text" placeholder="name" name="name" required>
+                            <input type="email" placeholder="email" name="_replyto" required><br>
+                            <textarea placeholder="your message" name="message" required rows="5"></textarea><br>
+                            <button class="btn_one" type="submit">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
