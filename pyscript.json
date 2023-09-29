@@ -1,4 +1,4 @@
 {
-    "packages": ["arrr", "numberwang"]
+    "packages": ["arrr", "numberwang"],
     "plugins": ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
 }
