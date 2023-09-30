@@ -1,3 +1,1 @@
-plugins = [
-                  "https://pyscript.net/latest/plugins/python/py_tutor.py"
-                ]
+plugins = ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
