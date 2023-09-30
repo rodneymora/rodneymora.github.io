@@ -32,6 +32,11 @@
 </head>
 <!-- Main HTML -->
 <body>
+    <py-env>
+    - matplotlib
+    - numpy
+    </py-env>
+	
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -118,7 +123,8 @@
 		Advisor: PhD. Pedro Osuna, Ph.D Francisco Ocampo-Torres, Ph.D Alexander Babanin
 	</p>
 	
-	<script type="py" src="./main.py" config="./pyscript.toml"></script>
+	<!-- <script type="py" src="./main.py" config="./pyscript.toml"></script> -->
+	<script type="py" src="./main.py"></script>
 	
         <!--
         <div class="onClickTextOverImage" style="background-image:url(images/general_pictures/pipeline.jpg)">
