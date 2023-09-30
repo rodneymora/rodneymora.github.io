@@ -1,4 +1,5 @@
-await micropip.install("numpy")
+import pyodide_js
+await pyodide_js.loadPackage('numpy')
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy import pi
