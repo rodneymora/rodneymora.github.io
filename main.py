@@ -1,9 +1,8 @@
-#import pyodide_js
-#await pyodide_js.loadPackage('numpy')
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy import pi
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
+import matplotlib.colors as colors
 
 ## JONSWAp spectrum
 def JONSWAP_HsTp(f, Tp = 10, Hs = 1.5, gamma = 3.3):
@@ -23,10 +22,10 @@ def JONSWAP_HsTp(f, Tp = 10, Hs = 1.5, gamma = 3.3):
 
   return E
 
-def DirSpec_HsTp(f, dirs, Hs = 1.5, Tp = 10, dirp = 90, spr = 60, gamma = 3.3, model = 'D', sf = 'sech'):
+def DirSpec_HsTp(f, dirs, Hs = 1.5, Tp = 10, dirp = 90, spr = 60, gamma = 3.3):
   nd = len(dirs)
   ## Compute one dimensional spectrum
-  E = JONSWAP_HsTp(f, Tp, Hs, gamma, model)
+  E = JONSWAP_HsTp(f, Tp, Hs, gamma)
 
   frac = 0.9 
 
@@ -64,7 +63,7 @@ spr = [30, 90, 20]
 ## Compute directional spectrum (Sinthetic)
 DS = np.zeros((len(f), len(dirs)))
 for ii in range(0, len(Hs)):
-  DS = DS + DirSpec_HsTp(f, dirs, Hs[ii], Tp[ii], dirp[ii], spr[ii], 3.3, model = 'D', sf = 'cos2s')
+  DS = DS + DirSpec_HsTp(f, dirs, Hs[ii], Tp[ii], dirp[ii], spr[ii], 3.3)
 
 ##
 ## Color palette to use in contourf or pcolor
@@ -99,7 +98,9 @@ norm = colors.BoundaryNorm(np.log(levels), cmap.N, clip = True)
 fig, ax = plt.subplots(figsize = (10, 6), facecolor = 'w',
            edgecolor = 'k', constrained_layout = True, subplot_kw = dict(polar = True))
 
-hc1 = ax.pcolormesh(dirs*pi/180, f, np.log(DS), norm = norm, cmap = cmap, shading = 'gouraud')
+ax.grid(False)
+
+hpc = ax.pcolormesh(dirs*pi/180, f, np.log(DS), norm = norm, cmap = cmap, shading = 'gouraud')
 
 ## Radii and angles labels
 ax.set_theta_zero_location('N')
@@ -107,35 +108,32 @@ ax.set_theta_zero_location('N')
 ## Clockwise
 ax.set_theta_direction(-1)
 ax.set_thetagrids(np.arange(0, 360, 30),\
-			labels = [str(i)+'º' if i > 0 else str(i)+'ºN' for i in range(0, 360, 30)],
-			fontsize = 8, fontweight = 'bold')
+      labels = [str(i)+'º' if i > 0 else str(i)+'ºN' for i in range(0, 360, 30)],
+      fontsize = 8, fontweight = 'bold')
 
 ## Frequency space
-if False:
-	ax.set_rmax(0.5)
-	ax.set_rgrids([0.05, 0.1, 0.2, 0.3, 0.4],\
-				labels = [r'0.05 Hz', r'0.1 Hz', r'0.2 Hz',\
-				r'0.3 Hz', r'0.4 Hz'],\
-				fontweight = 'bold', fontsize = 6)
-## Period space
 if True:
-	ax.set_rmax(12)
-	ax.set_rgrids([2, 4, 6, 8, 10],\
-				labels = [r'2', r'4', r'6', r'8',\
-				r'10s'], angle = 45,\
-				fontweight = 'bold', fontsize = 6)
+  ax.set_rmax(0.5)
+  ax.set_rgrids([0.05, 0.1, 0.2, 0.3, 0.4],\
+        labels = [r'0.05 Hz', r'0.1 Hz', r'0.2 Hz',\
+        r'0.3 Hz', r'0.4 Hz'],\
+        fontweight = 'bold', fontsize = 6)
+## Period space
+if False:
+  ax.set_rmax(12)
+  ax.set_rgrids([2, 4, 6, 8, 10],\
+        labels = [r'2', r'4', r'6', r'8',\
+        r'10s'], angle = 45,\
+        fontweight = 'bold', fontsize = 6)
 
 ticklabel = [r'$10^{-3}$', r'$10^{-2}$',\
-			r'$10^{-1}$', r'$10^0$']
-cbar = fig.colorbar(hpc, ax = axs, shrink = 0.8, pad = 0.01, spacing = 'proportional',\
+      r'$10^{-1}$', r'$10^0$']
+cbar = fig.colorbar(hpc, ax = ax, shrink = 0.8, pad = 0.01, spacing = 'proportional',\
 ticks = np.log([0.001, 0.01, 0.1, 1]))
 cbar.set_ticklabels(ticklabel)
-cbar.set_label(r'$\log_{10}[(S(f,\theta)/S(f,\theta)^{max}]$')
+cbar.set_label(r'$\log_{10}[(S(f,\theta)]$')
 
 ## Legend and grid
 ax.grid(True, linestyle = '--', alpha = .5, color = 'black',linewidth = .5)
 
-display(fig, target="mpl")
-## Colorbar
-cb = fig.colorbar(hc1, ax = ax)
-cb.set_label(r'$m^2/Hz/rad$')
+plt
