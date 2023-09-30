@@ -164,3 +164,5 @@ function closeImage() {
   imagePopup.style.display = "none";
  document.body.style.overflow = "auto";
 }
+
+let micropip = pyodide.pyimport(numpy);
