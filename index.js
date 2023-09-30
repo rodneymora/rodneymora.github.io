@@ -165,5 +165,5 @@ function closeImage() {
  document.body.style.overflow = "auto";
 }
 
-let micropip = pyodide.pyimport(numpy);
-await pyodide.loadPackage("numpy")
+//let micropip = pyodide.pyimport(numpy);
+//await pyodide.loadPackage("numpy")
