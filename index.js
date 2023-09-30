@@ -166,3 +166,4 @@ function closeImage() {
 }
 
 let micropip = pyodide.pyimport(numpy);
+await pyodide.loadPackage("numpy")
