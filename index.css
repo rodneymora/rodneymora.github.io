@@ -162,8 +162,8 @@ header table {
     background:rgb(2, 62, 138);
 }
 #rightImage {
-    width:90%;
-    height:85vh;
+    width:80%;
+    height:75vh;
     background:linear-gradient(0deg,rgba(2,62,138, 0.3),rgba(2,62,138, 0.3)), url("images/profile_photo.jpg") center center;
     background-size:cover;
     background-repeat:no-repeat;
