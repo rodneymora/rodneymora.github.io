@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+
 
 footer{
     background: #023e8a;
@@ -686,9 +688,6 @@ p {
 */
 
 /* Import google font */
-@import url(
-'https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
