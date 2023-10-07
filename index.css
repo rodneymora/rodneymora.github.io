@@ -781,3 +781,9 @@ at middle of screen */
     }
 }
 
+/* Frame color and border width to show map location */
+iframe {
+  border: 1px solid black;
+  width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+
