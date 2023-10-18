@@ -191,6 +191,10 @@ header table {
     background-size:cover;
     background-repeat:no-repeat;
 }
+/* Add circular images by REME,2023 */
+#circular--square {
+    border-radius: 50%;
+}
 #proj {
     width:92vw;
     padding:6vh 4vw;
