@@ -190,6 +190,7 @@ header table {
     background:linear-gradient(0deg,rgba(2,62,138, 0.3),rgba(2,62,138, 0.3)), url("images/profile_photo.jpg") center center;
     background-size:cover;
     background-repeat:no-repeat;
+    border-radius: 50%;
 }
 /* Add circular images by REME,2023 */
 #circular--square {
